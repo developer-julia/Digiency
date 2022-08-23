@@ -1,18 +1,40 @@
+@import fonts
+@import vars
+
 html,
 body
 	height: 100%
-
-.wrapper
-	display: flex
-	flex-direction: column
-	min-height: 100%
-
-.main
-	flex: 1 0 auto
-.footer
-	flex: 0 0 auto
+	font-family: $font-body
 
 .container
   max-width: 1200px
   margin: 0 auto
   padding: 0 15px
+
+.btn
+	cursor: pointer
+	padding: 10px 22px
+	font-weight: 500
+	background-color: transparent
+	font-size: 20px
+	line-height: 30px
+	border-radius: 4px
+	border: 0px
+	&:focus
+		outline: none
+.btn--white
+	color: $black-color
+	background-color: transparent
+	border: 1px solid $black-color
+	transition: all .3s linear
+	&:focus, &:hover, &:active
+		color: $white-color
+		background-color: $orange-color
+		border: 1px solid $orange-color
+.btn--orange
+	color: $white-color
+	background-color: $orange-color
+	transition: all .3s linear
+	&:focus, &:hover, &:active
+		color: $white-color
+		background-color: $black-color
